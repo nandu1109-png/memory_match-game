@@ -1,108 +1,102 @@
-# Memory Match Game (C Project)
+# 📘 STAFF MANAGEMENT SYSTEM (C Programming)
 
-## Abstract
-The Memory Match Game is an interactive terminal-based C application where the player attempts to match hidden pairs on a 4×4 grid. Each round, the player selects two cards using row and column coordinates. If the numbers match, the cards stay revealed; otherwise, they flip back. The objective is to match all 8 pairs.
-
-This project demonstrates core C programming concepts including arrays, loops, randomization, conditional logic, and input validation.
-
----
-
-## Features of the Program
-
-- 4×4 game grid (16 cards, 8 pairs)
-- Cards are randomly shuffled at every game start
-- User selects two cards per turn
-- Prevents selecting already flipped cards
-- Displays number of matched pairs
-- Fully terminal-based interface
-- Beginner-friendly and easy to understand
+## 📄 ABSTRACT
+The **Staff Management System** is a terminal-based application written in **C** that allows users to manage staff or employee records efficiently. The system provides core functionalities such as adding new staff details, viewing records, searching by ID, updating information, and deleting staff entries. All data is stored persistently in a **binary file (staff.txt)**, ensuring it remains available across program runs.  
+This project demonstrates key C programming concepts such as **structures, file handling, control flow, and modular programming**, making it ideal for beginners, students, and small-scale administrative purposes.
 
 ---
 
-## Technical Requirements
+# ✨ FEATURES
 
-### System Requirements
-- Operating System: Windows / Linux / macOS
-- Interface: Terminal / Command line
-- Memory: Minimum 2 MB
-- Storage: No persistent storage required
+## Core Functionalities
+- ➕ Add new staff records (ID, Name, Age, Designation, Salary)  
+- 📋 Display all staff records in a clean tabular format  
+- 🔍 Search for staff using their unique ID  
+- ✏️ Update existing staff information  
+- ❌ Delete staff records  
+- 💾 Persistent data storage using a binary file (`staff.txt`)  
+- 🖥️ Fully terminal-based, menu-driven interface  
+- 👨‍💻 Beginner-friendly implementation using functions and structures  
+- ⚙️ Auto-creation of data file if it does not exist  
+- ⚠️ Basic error handling for invalid inputs and missing files  
 
-### Software Requirements
-- C Compiler: GCC / MinGW / Clang / MSVC
-- Works with any code editor (VS Code, Dev-C++, Code::Blocks, Turbo C, Vim/Nano)
+---
 
-### Required Libraries
-```c
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+# 🛠️ TECHNICAL REQUIREMENTS
 
+## System Requirements
+- Operating System: **Windows / Linux / macOS**
+- Terminal or Command Prompt
+- Minimum 4 MB RAM
+- Minimal disk space to store `staff.txt`
 
-Functional Requirements
-User Interface
+## Software Requirements
+- C Compiler: **GCC / MinGW / Clang / MSVC**
+- Any code editor or IDE (VS Code, Code::Blocks, Dev-C++, etc.)
+- Optional: Make utility (if using a Makefile)
 
-Entirely text-based
+## Programming Requirements
+- Programming Language: **C**
+- Supported Standards: **C89 / C99 / C11**
+- Required header files:  
+  `stdio.h`, `stdlib.h`, `string.h`
 
-Shows game board with hidden and revealed cards
+## File Handling Requirements
+- Read/write permission in the working directory
+- Staff data stored in **binary format** in `staff.txt`
+- Program automatically creates the file if it does not exist
 
-Validates user input and prevents invalid selections
+---
 
-Game Mechanics
-Function	Description
-Pick Cards	User enters coordinates for two cards
-Match	Cards remain visible and match count increases
-No Match	Cards flip back
-Restriction	User cannot pick already revealed cards
-Program Flow
+# 📌 FUNCTIONAL REQUIREMENTS
 
-Card values are duplicated (1–8) and randomly shuffled
+## User Interface
+- Operates entirely through the terminal (CLI)
+- Displays a clear and simple menu
+- Validates user input before processing
 
-Player plays until all pairs are matched
+## Staff Record Operations
+### ➕ Add Staff  
+Allows the user to enter staff ID, name, age, designation, and salary. Data is saved to `staff.txt`.
 
-Displays congratulatory message at completion
+### 📋 Display Staff  
+Prints all stored staff records in a formatted table.
 
-Compilation and Execution
-Linux / macOS
-gcc memory_game.c -o memory_game
-./memory_game
+### 🔍 Search Staff  
+Searches the database using a unique staff ID.
 
-Windows (MinGW)
-gcc memory_game.c -o memory_game.exe
-memory_game.exe
+### ✏️ Update Staff  
+Allows modification of name, age, designation, or salary for an existing record.
 
-Screenshots
+### ❌ Delete Staff  
+Deletes a record permanently using a temporary file method for safety.
 
-(Add your screenshots after running the program)
+## Data Management
+- Uses binary file storage for speed and simplicity  
+- Implements safe update/delete operations using temporary file handling  
+- Gracefully handles empty or missing data files  
 
-Suggested folder:
+## Program Flow
+- Menu loops until the user selects **Exit**
+- Displays confirmations and error messages
+- Ensures smooth transitions between operations
 
-/screenshots
-  screenshot1.png
-  screenshot2.png
+---
 
+## 2️⃣ Run the Executable
 
-Insert screenshot into README:
+### Linux / macOS:
+./staff
 
-![Game Screenshot](screenshots/screenshot1.png)
+### Windows:
+staff.exe
 
-Repository Structure
-Memory-Match-Game/
- ├── memory_game.c
- ├── README.md
- └── screenshots/
+## 3️⃣ Data File
+Program automatically creates `staff.txt` if it does not exist  
+All staff records are saved to and loaded from this file in binary format  
 
-Future Improvements
+## 📸 Screenshots
+(Add screenshots after running the program)
 
-Move counter
+---
 
-Timer / Time challenge mode
-
-Levels of difficulty
-
-Sound effects
-
-High-score tracking
-
-Author
-
-NANDU — GitHub Profile Link
