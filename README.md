@@ -1,64 +1,39 @@
-Create a project folder like this:
-Memory-Match-Game/
- ├── memory_game.c
- ├── README.md
- └── screenshots/
-       └── (add images later)
-README
-# 🧠 Memory Match Game (C Programming Project)
+# Memory Match Game (C Project)
 
-A simple and interactive **Memory Match Game** developed in C using a 4x4 board (16 cards / 8 pairs).  
-This game helps improve logical thinking and memory skills.
+## Abstract
+The Memory Match Game is an interactive terminal-based C application where the player attempts to match hidden pairs on a 4×4 grid. Each round, the player selects two cards using row and column coordinates. If the numbers match, the cards stay revealed; otherwise, they flip back. The objective is to match all 8 pairs.
+
+This project demonstrates core C programming concepts including arrays, loops, randomization, conditional logic, and input validation.
 
 ---
 
-## 📌 Functional Requirements
-✔ The system must randomly shuffle card values.  
-✔ The player must select two coordinates per turn.  
-✔ Matching pairs stay revealed.  
-✔ Non-matching pairs are flipped back.  
-✔ The game ends when all 8 pairs are matched.
+## Features of the Program
+
+- 4×4 game grid (16 cards, 8 pairs)
+- Cards are randomly shuffled at every game start
+- User selects two cards per turn
+- Prevents selecting already flipped cards
+- Displays number of matched pairs
+- Fully terminal-based interface
+- Beginner-friendly and easy to understand
 
 ---
 
-## ✨ Features
-- 4×4 memory grid
-- Random shuffle on every game start
-- Input validation for repeated selections
-- Score tracking (number of matches found)
-- Console-based and beginner-friendly
+## Technical Requirements
 
----
+### System Requirements
+- Operating System: Windows / Linux / macOS
+- Interface: Terminal / Command line
+- Memory: Minimum 2 MB
+- Storage: No persistent storage required
 
-## ▶ How to Run the Project
+### Software Requirements
+- C Compiler: GCC / MinGW / Clang / MSVC
+- Works with any code editor (VS Code, Dev-C++, Code::Blocks, Turbo C, Vim/Nano)
 
-### **GCC Compiler**
-```bash
-gcc memory_game.c -o memory_game
-./memory_game
-
-GAME SCREENSHOT
-screenshots/
- ├── screenshot1.png
- ├── screenshot2.png
-![Game Screenshot](screenshots/screenshot1.png)
-Repository structure
-Memory-Match-Game
- ├── memory_game.c
- ├── README.md
- └── screenshots/
-
-PROJECT COMPLETED
-
----
-
-## 🔗 Step 3 — Push to GitHub (Guide)
-
-```bash
-git init
-git add .
-git commit -m "Initial commit - Memory Match Game"
-git branch -M main
-git remote add origin https://github.com/USERNAME/Memory-Match-Game.git
-git push -u origin main
+### Required Libraries
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
