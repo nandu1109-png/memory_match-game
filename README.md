@@ -96,9 +96,11 @@ Suggested folder:
 ```
 /screenshots
   screenshot1.png
+```
 <img width="381" height="493" alt="Screenshot 2025-11-23 210728" src="https://github.com/user-attachments/assets/aed3f3b0-d75f-4c95-91c4-e0dab9ebce62" />
 
   screenshot2.png
+  ```
 <img width="421" height="313" alt="Screenshot 2025-11-23 210828" src="https://github.com/user-attachments/assets/9bac7a1a-888d-4e66-8a1b-ba496ae4dff2" />
 
 ```
