@@ -36,4 +36,33 @@ This project demonstrates core C programming concepts including arrays, loops, r
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+## Functional Requirements
+
+### User Interface
+- Entirely text-based
+- Shows game board with hidden and revealed cards
+- Validates user input and prevents invalid selections
+
+### Game Mechanics
+| Function | Description |
+|---------|-------------|
+| Pick Cards | User enters coordinates for two cards |
+| Match | Cards remain visible and match count increases |
+| No Match | Cards flip back |
+| Restriction | User cannot pick already revealed cards |
+
+### Program Flow
+- Card values are duplicated (1–8) and randomly shuffled
+- Player plays until all pairs are matched
+- Displays congratulatory message at completion
+
+---
+
+## Compilation and Execution
+
+### Linux / macOS
+```bash
+gcc memory_game.c -o memory_game
+./memory_game
+
 
