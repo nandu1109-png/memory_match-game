@@ -103,7 +103,6 @@ Suggested folder:
   ```
 <img width="421" height="313" alt="Screenshot 2025-11-23 210828" src="https://github.com/user-attachments/assets/9bac7a1a-888d-4e66-8a1b-ba496ae4dff2" />
 
-```
 
 Insert screenshot into README once uploaded:
 ```
