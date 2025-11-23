@@ -36,6 +36,8 @@ This project demonstrates core C programming concepts including arrays, loops, r
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
+
 Functional Requirements
 User Interface
 
